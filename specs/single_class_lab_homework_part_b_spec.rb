@@ -34,5 +34,9 @@ class TeamTest < Minitest::Test
     assert_equal("Barry Inch", @team.coach)
   end
 
+  def test_add_player
+    @team.add_player("Don Pool")
+    assert_equal(4, @team.players.length )
+  end
 
 end

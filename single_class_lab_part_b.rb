@@ -20,9 +20,13 @@ class Team
   # def coach_name
   #   return @coach
   # end
-  # 
+  #
   # def change_coach(new_coach)
   #   @coach = new_coach
   # end
+
+  def add_player(new_player)
+    @players.push(new_player)
+  end
 
 end
