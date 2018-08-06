@@ -18,4 +18,8 @@ class Team
     return @coach
   end
 
+  def change_coach(new_coach)
+    @coach = new_coach
+  end
+  
 end
