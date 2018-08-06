@@ -39,4 +39,10 @@ class TeamTest < Minitest::Test
     assert_equal(4, @team.players.length )
   end
 
+  def test_find_player
+    result = @team.find_player?("George Boost")
+    assert_equal(true, result)
+  end
+
+  
 end
