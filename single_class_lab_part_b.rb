@@ -14,4 +14,8 @@ class Team
     return @players
   end
 
+  def coach_name
+    return @coach
+  end
+
 end

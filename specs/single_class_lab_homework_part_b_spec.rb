@@ -24,4 +24,9 @@ class TeamTest < Minitest::Test
     assert_equal([ "George Boost", "Ruby Tuesday", "Henry Krinkle" ], players )
   end
 
+  def test_get_coach
+    coach = @team.coach_name
+    assert_equal("Tony Boa", coach )
+  end
+  
 end
