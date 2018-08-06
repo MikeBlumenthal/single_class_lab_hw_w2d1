@@ -9,4 +9,9 @@ class Team
   def team_name
     return @team_name
   end
+
+  def roster
+    return @players
+  end
+
 end

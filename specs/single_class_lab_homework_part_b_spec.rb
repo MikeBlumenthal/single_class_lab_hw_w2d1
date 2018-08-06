@@ -7,12 +7,9 @@ class TeamTest < Minitest::Test
   def setup
     @team = Team.new(
       "The Pythons",
-      [
-        "George Boost",
-        "Trevor Never",
+      [ "George Boost",
         "Ruby Tuesday",
-        "Henry Krinkle"
-      ],
+        "Henry Krinkle" ],
       "Tony Boa"
     )
   end
@@ -20,6 +17,11 @@ class TeamTest < Minitest::Test
   def test_get_team_name
     team_name = @team.team_name
     assert_equal("The Pythons", team_name )
+  end
+
+  def test_get_players
+    players = @team.roster
+    assert_equal([ "George Boost", "Ruby Tuesday", "Henry Krinkle" ], players )
   end
 
 end
