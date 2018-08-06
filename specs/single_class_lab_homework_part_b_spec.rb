@@ -30,7 +30,9 @@ class TeamTest < Minitest::Test
   end
 
   def test_change_coach
-    new_coach = @team.change_coach("Barry Inch")
-    assert_equal("Barry Inch", new_coach)
+    @team.coach = "Barry Inch"
+    assert_equal("Barry Inch", @team.coach)
   end
+
+
 end
