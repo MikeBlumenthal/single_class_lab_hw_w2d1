@@ -1,13 +1,15 @@
 class Team
 
-  attr_reader(:team_name, :players, :coach)
-  attr_accessor(:players, :coach)
+  attr_reader(:team_name, :players, :coach, :points)
+  attr_accessor(:players, :coach, :points)
 
-  def initialize(team_name, players, coach)
+  def initialize(team_name, players, coach, points = 0)
     @team_name = team_name
     @players = players
     @coach = coach
+    @points = points
   end
+
 
   # def team_name
   #   return @team_name
@@ -39,5 +41,5 @@ class Team
       end
     end
   end
-  
+
 end

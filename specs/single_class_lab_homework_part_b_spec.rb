@@ -7,10 +7,9 @@ class TeamTest < Minitest::Test
   def setup
     @team = Team.new(
       "The Pythons",
-      [ "George Boost",
-        "Ruby Tuesday",
-        "Henry Krinkle" ],
-      "Tony Boa"
+      [ "George Boost", "Ruby Tuesday", "Henry Krinkle" ],
+      "Tony Boa",
+
     )
   end
 
@@ -44,5 +43,8 @@ class TeamTest < Minitest::Test
     assert_equal(true, result)
   end
 
+  def test_default_points
+    assert_equal(0, @team.points)
+  end
   
 end
