@@ -20,12 +20,12 @@ class TeamTest < Minitest::Test
   end
 
   def test_get_players
-    players = @team.roster
+    players = @team.players
     assert_equal([ "George Boost", "Ruby Tuesday", "Henry Krinkle" ], players )
   end
 
   def test_get_coach
-    coach = @team.coach_name
+    coach = @team.coach
     assert_equal("Tony Boa", coach )
   end
 
