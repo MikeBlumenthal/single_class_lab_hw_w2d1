@@ -42,4 +42,8 @@ class Team
     end
   end
 
+  def win_or_lose(result)
+    @points += 1 if result == "win"
+  end
+
 end

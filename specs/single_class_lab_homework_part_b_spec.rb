@@ -46,5 +46,15 @@ class TeamTest < Minitest::Test
   def test_default_points
     assert_equal(0, @team.points)
   end
-  
+
+  def test_points_added_for_win
+    @team.win_or_lose("win")
+    assert_equal(1, @team.points)
+  end
+
+  def test_points_not_added_for_loss
+    @team.win_or_lose("lose")
+    assert_equal(0, @team.points)
+  end
+
 end
